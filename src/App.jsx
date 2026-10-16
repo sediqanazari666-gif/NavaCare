@@ -1,14 +1,16 @@
+
 import React,{useState} from 'react';
 import {X,Minus,Plus,Trash2,ShoppingCart,ArrowRight,CheckCircle2,Menu,Activity} from 'lucide-react';
 import Sidebar from './components/Sidebar';
 import Topbar from './components/Topbar';
-import DashboardPage from './pages/DashboardPage';
+import DashboardPage from "./pages/Dashboard/DashboardPage.jsx";
 import DoctorsPage from './pages/DoctorsPage';
-import ClinicsPage from './pages/ClinicsPage';
-import PharmacyPage from './pages/PharmacyPage';
-import MarketplacePage from './pages/MarketplacePage';
-import AppointmentsPage from './pages/AppointmentsPage';
+import ClinicsPage from './pages/Clinic/ClinicsPage.jsx';
+import PharmacyPage from './pages/PharmacyPage.jsx';
+import MarketplacePage from './pages/MarketplacePage.jsx';
+import AppointmentsPage from './pages/Appointments/AppointmentsPage.jsx';
 import {MessagesPage,HealthPage} from './pages/OtherPages';
+import SettingsPage from "./pages/Settings/SettingsPage";
 const money=n=>
     `${n.toLocaleString()} AFN`;
 export default 
@@ -45,7 +47,8 @@ const pageContent=()=>{switch(page){case 'Dashboard':
     case 'Marketplace':return <MarketplacePage query={query} add={add}/>;
     case 'Appointments':return <AppointmentsPage savedAppointments={savedAppointments}/>;
     case 'Messages':return <MessagesPage/>;case 'My Health':return <HealthPage/>;
-    default:return <DashboardPage navigate={navigate} book={setBooking}/>}};
+ case 'Settings': return <SettingsPage/>; 
+     default:return <DashboardPage navigate={navigate} book={setBooking}/>}};
 return <div className="min-h-screen bg-[#f5f7fb] text-slate-800">
     <Sidebar page={page} onNavigate={navigate} open={menuOpen} onClose={()=>setMenuOpen(false)} cartCount={cartCount}/>
         <div className="min-h-screen lg:pl-[270px]">

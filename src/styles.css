@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 :root{font-family:'DM Sans',sans-serif;
     
@@ -66,9 +67,9 @@
 .quick-card h3{margin-top:15px;font-size:14px;font-weight:800;color:#252c48}
 .quick-card p{margin-top:6px;font-size:12px;line-height:1.65;color:#81899d}
 .panel-card{border:1px solid #e8ebf3;border-radius:20px;background:white;padding:20px;box-shadow:0 8px 28px #25335b04}
-.provider-card,.clinic-card,.pharmacy-card,.product-card,.store-card{overflow:hidden;border:1px solid #e7eaf2;border-radius:20px;
+.provider-card,.clinic-card,.pharmacy-card{overflow:hidden;border:1px solid #e7eaf2;border-radius:20px;
     background:white;box-shadow:0 7px 22px #25335b05;transition:transform .2s,border .2s,box-shadow .2s}
-.provider-card:hover,.clinic-card:hover,.pharmacy-card:hover,.product-card:hover,.store-card:hover{transform:translateY(-3px);
+.provider-card:hover,.clinic-card:hover,.pharmacy-card:hover{transform:translateY(-3px);
         border-color:#d9d3ff;box-shadow:0 16px 35px #25335b0d}
 .provider-cover{height:160px;width:100%;object-fit:cover;background:#f1f2f8}
 .clinic-card,.pharmacy-card{display:flex;flex-direction:column}
@@ -78,14 +79,11 @@
     @media(min-width:640px){.clinic-image{height:auto;min-height:280px;width:180px;max-width:35%}}
     .pharmacy-card>img{height:180px;width:100%;object-fit:cover}@media(min-width:640px){
     .pharmacy-card>img{height:auto;min-height:255px;width:170px;max-width:34%}}
-    .product-image-wrap{position:relative;display:grid;height:150px;place-items:center;background:linear-gradient(135deg,#f8f8ff,#f0fbfc);padding:15px}
-    .product-image-wrap img{height:100%;width:100%;object-fit:contain;mix-blend-mode:multiply}
     .product-category{position:absolute;left:12px;top:12px;border-radius:8px;background:white;
         
     padding:5px 8px;font-size:9px;font-weight:800;color:#68618d;box-shadow:0 2px 8px #24304a0a}.store-card{display:block;
         width:100%;text-align:left}.store-card>div:first-child{position:relative;height:205px;overflow:hidden}
-.store-card>div:first-child img{height:100%;width:100%;object-fit:cover;transition:transform .4s}
-.store-card:hover>div:first-child img{transform:scale(1.04)}
+
 .status-pill{display:inline-flex;align-items:center;gap:5px;border-radius:999px;padding:5px 9px;font-size:10px;font-weight:800}
 .status-green{background:#eafaf2;color:#19865b}
 .status-amber{background:#fff5e5;color:#b87918}
@@ -107,5 +105,4 @@
     .map-caption span{font-size:10px;color:#8990a2}
     .form-label{font-size:12px;font-weight:800;color:#47516c}
     .form-label .field{font-weight:500}
-    .store-card h3{font-family:Manrope,sans-serif}
-    .store-card .text-xl{letter-spacing:-.035em}::selection{background:#ded9ff;color:#252044}
+    
