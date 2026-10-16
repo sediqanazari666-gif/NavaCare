@@ -122,7 +122,25 @@ Project Structure
 
 The project follows a modular structure. The exact filenames may vary depending on the current implementation.
 
-NovaCare-Pro/ ├── public/ ├── src/ │ ├── assets/ │ │ └── images/ │ ├── components/ │ ├── pages/ │ │ ├── DashboardPage.jsx │ │ ├── FindDoctorPage.jsx │ │ ├── FindClinicPage.jsx │ │ ├── PharmacyPage.jsx │ │ └── MarketplacePage.jsx │ ├── App.jsx │ ├── main.jsx │ └── ... ├── index.html ├── package.json ├── vite.config.js └── README.md 
+NovaCare-Pro/
+├── public/
+├── src/
+│ ├── assets/
+│ │ └── images/
+│ ├── components/
+│ ├── pages/
+│ │ ├── DashboardPage.jsx
+│ │ ├── FindDoctorPage.jsx
+│ │ ├── FindClinicPage.jsx
+│ │ ├── PharmacyPage.jsx
+│ │ └── MarketplacePage.jsx
+│ ├── App.jsx 
+│ ├── main.jsx
+│ └── ...
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md 
 
 Note: This is an illustrative structure. Update the filenames to match the actual files in your project.
 
